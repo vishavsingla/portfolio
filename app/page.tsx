@@ -18,7 +18,7 @@ const Home: React.FC = () => {
         <h3 className="text-4xl text-[#25647F] font-bold mt-2 text-gray-300">I am a third year undergraduate at Thapar University.</h3>
         <p className="mt-4 text-gray-400">
           I’m a software engineer based in India specializing in building Full Stack applications and Blockchain based applications. 
-          I have experience working with a range of technologies including React, Next.js, Node.js, Express.js, Solidity, and Ethereum.
+          I have experience working with a range of technologies including React.js, Next.js, Node.js, Express.js, Solidity, Typescript, SQL, PostgreSQL, Docker and Ethereum.
         </p>
         <a href="https://github.com/vishavsingla" className="inline-block mt-8 border border-[#64ffda] text-[#64ffda] py-2 px-4 rounded text-sm">Check out my Github!</a>
       </div>
