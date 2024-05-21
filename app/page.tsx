@@ -1,6 +1,7 @@
 "use client"
 import React from 'react';
 import Link from 'next/link';
+import Projects from './(pages)/projects/page';
 
 const Home: React.FC = () => {
   return (
@@ -22,6 +23,10 @@ const Home: React.FC = () => {
         </p>
         <a href="https://github.com/vishavsingla" className="inline-block mt-8 border border-[#64ffda] text-[#64ffda] py-2 px-4 rounded text-sm">Check out my Github!</a>
       </div>
+      <div className='m-14'>
+        <Projects />
+      </div>
+      
     </div>
   );
 };
