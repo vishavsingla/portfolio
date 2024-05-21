@@ -10,7 +10,7 @@ const Home: React.FC = () => {
       <Link href="/experience" className="text-[#64ffda] text-sm hover:border-b-2 hover:pb-2 hover:border-[#64ffda] transition duration-300">2. Experience</Link>
       <Link href="/projects" className="text-[#64ffda] text-sm hover:border-b-2 hover:pb-2 hover:border-[#64ffda] transition duration-300">3. Projects</Link>
       <Link href="/contact" className="text-[#64ffda] text-sm hover:border-b-2 hover:pb-2 hover:border-[#64ffda] transition duration-300">4. Contact</Link>
-      <a href="/resume" className="text-[#64ffda] text-sm hover:border-b-2 hover:pb-2 hover:border-[#64ffda] transition duration-300">5. Resume</a>
+      <a href="/" className="text-[#64ffda] text-sm hover:border-b-2 hover:pb-2 hover:border-[#64ffda] transition duration-300">5. Resume</a>
     </nav>
       <div className="mt-16 max-w-screen-lg">
         <h1 className="text-[#64ffda] text-2xl">Hi, my name is</h1>
