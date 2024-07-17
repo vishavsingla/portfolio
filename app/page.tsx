@@ -16,7 +16,7 @@ const Home: React.FC = () => {
     </nav>
       <div className="mt-16 max-w-screen-lg">
         <h1 className="text-[#64ffda] text-2xl">Hi, my name is</h1>
-        <h2 className="text-7xl font-bold mt-4">Vishav Singla.</h2>
+        <h2 className="text-7xl font-bold mt-4">Vishav Singla</h2>
         <h3 className="text-4xl text-[#25647F] font-bold mt-2 text-gray-300">I am a third year undergraduate at Thapar University, India.</h3>
         <p className="mt-4 text-gray-400">
           I’m a software engineer based in India specializing in building Full Stack applications and Blockchain based applications. 
