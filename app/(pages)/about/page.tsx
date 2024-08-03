@@ -1,14 +1,22 @@
+import Image from 'next/image';
 import React from 'react';
-
-const About: React.FC = () => {
-  return (
-    <div className="min-h-screen bg-[#0a192f] text-[#ccd6f6] flex flex-col items-center py-5">
-      <h1 className="text-4xl font-bold">About Me</h1>
-      <p className="mt-4 max-w-screen-md text-gray-400">
-        I am a third-year undergraduate student at Thapar University, pursuing a degree in Computer Science. I am passionate about software development, particularly in full-stack and blockchain technologies. In my free time, I enjoy contributing to open-source projects and exploring new advancements in technology.
-      </p>
+const About: React.FC = () => (
+  <section id="about" className="py-20">
+    <h2 className="text-3xl font-bold mb-4">About Me</h2>
+    <div className="flex flex-col md:flex-row items-center">
+      <div className="md:w-2/3 pr-8">
+        <p className="mb-4">
+          I'm a third-year undergraduate at Thapar University, pursuing a degree in Electronics and Computer Engineering. 
+          My passion lies in full-stack development and blockchain technology, where I've honed my skills through various projects and internships.
+        </p>
+        <p>
+          As a GSoC'24 Contributor at Aossie and former SDE Intern at Globe Teleservices, I've gained valuable experience in developing robust applications 
+          and working with cutting-edge technologies. I'm always eager to take on new challenges and contribute to innovative solutions.
+        </p>
+      </div>
+      {/* <div className="md:w-1/3 mt-8 md:mt-0">
+        <Image src="/profile-pic.jpg" alt="Vishav Singla" width={300} height={300} className="rounded-full" />
+      </div> */}
     </div>
-  );
-};
-
-export default About;
+  </section>
+);
