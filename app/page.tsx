@@ -1,9 +1,8 @@
-'use client';
-
+'use client'
+import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaCalendarAlt, FaBriefcase } from 'react-icons/fa';
 import { SiLeetcode } from 'react-icons/si';
-
 
 const Portfolio = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -44,6 +43,10 @@ const Portfolio = () => {
             Currently, I&apos;m focused on creating accessible, human-centered products at Globe Teleservices 
             and contributing to open-source projects.
           </p>
+          <div className="bg-[#112240] p-6 rounded-lg shadow-xl mb-8">
+            <h4 className="text-2xl font-bold text-[#64ffda] mb-2">GSoC 2024 Contributor</h4>
+            <p className="text-[#8892b0]">Selected as a Google Summer of Code contributor for AOSSIE organization.</p>
+          </div>
           <div className="flex space-x-6 mb-12">
             {[
               { href: "https://github.com/vishavsingla", icon: <FaGithub /> },
@@ -76,58 +79,63 @@ const Portfolio = () => {
               </p>
             </div>
             <div className="md:w-1/3 mt-8 md:mt-0">
-              <img src="profile-pic.png" alt="Vishav Singla" className="rounded-lg " />
+            <img src="profile-pic.png" alt="Vishav Singla" className="rounded-lg shadow-xl" />
+
             </div>
           </div>
         </section>
 
         <section id="experience" className="py-20">
-          <h2 className="text-4xl font-bold mb-12 text-[#ccd6f6]">Experience</h2>
-          <div className="space-y-12">
-            {[
-              {
-                title: "Google Summer of Code (GSoC)",
-                company: "Student Developer for Social Street Smart at AOSSIE",
-                date: "May 2024 – August 2024",
-                description: [
-                  "Migrated the project repository from GitLab to GitHub, upgraded outdated ML models, and deployed them on Flask APIs",
-                  "Refactored and migrated the frontend codebase to React, reducing load times by 40% and improving user engagement"
-                ]
-              },
-              {
-                title: "Software Development Intern",
-                company: "Globe Teleservices",
-                date: "June 2024 – July 2024",
-                description: [
-                  "Gained proficiency in Spring, Spring Boot, Hibernate, Terraform, Kafka, and Microservices",
-                  "Developed backend models for validation and JSON input conversion using Spring Boot and Node.js",
-                  "Worked on frontend validations and user interface development in React.js for internal tools"
-                ]
-              }
-              // },
-              // {
-              //   title: "Machine Learning Teaching Assistant Intern",
-              //   company: "Sunrise Mentors",
-              //   date: "January 2024 – April 2024",
-              //   description: [
-              //     "Guided 100+ students, solved 400+ doubts, and reviewed their projects, earning a rating of 4.75/5",
-              //     "Assisted students in understanding complex concepts, debugging code, and providing feedback on projects",
-              //     "Collaborated with instructors to review course materials, ensuring quality and coherence in the curriculum"
-              //   ]
-              // }
-            ].map((job, index) => (
-              <div key={index} className="bg-[#112240] p-8 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300">
-                <h3 className="text-2xl font-bold text-[#64ffda] mb-2">{job.title}</h3>
-                <p className="text-xl text-[#8892b0] mb-4">{job.company} | {job.date}</p>
-                <ul className="list-disc list-inside text-[#8892b0]">
-                  {job.description.map((item, itemIndex) => (
-                    <li key={itemIndex} className="text-lg mb-2">{item}</li>
-                  ))}
-                </ul>
+        <h2 className="text-4xl font-bold mb-12 text-[#ccd6f6] text-center">Professional Experience</h2>
+        <div className="space-y-12">
+          {[
+            {
+              title: "Google Summer of Code (GSoC)",
+              company: "Student Developer for Social Street Smart at AOSSIE",
+              date: "May 2024 – August 2024",
+              description: [
+                "Migrated the project repository from GitLab to GitHub",
+                "Upgraded outdated ML models, and deployed them on Flask APIs",
+                "Refactored and migrated the frontend codebase to React, reducing load times by 40% and improving user engagement"
+              ],
+              logo: "/gsoc.png"
+            },
+            {
+              title: "Software Development Intern",
+              company: "Globe Teleservices",
+              date: "June 2024 – July 2024",
+              description: [
+                "Gained proficiency in Spring, Spring Boot, Hibernate, Terraform, Kafka, and Microservices",
+                "Developed backend models for validation and JSON input conversion using Spring Boot and Node.js",
+                "Worked on frontend validations and user interface development in React.js for internal tools"
+              ],
+              logo: "/image.png"
+            }
+          ].map((job, index) => (
+            <div key={index} className="bg-[#112240] p-8 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+              <div className="flex items-center mb-6">
+                <img src={job.logo} alt={job.company} className="w-12 h-12 mr-4 rounded-full" />
+                <div>
+                  <h3 className="text-2xl font-bold text-[#64ffda]">{job.title}</h3>
+                  <p className="text-xl text-[#8892b0]">{job.company}</p>
+                </div>
               </div>
-            ))}
-          </div>
-        </section>
+              <div className="flex items-center text-[#8892b0] mb-4">
+                <FaCalendarAlt className="mr-2" />
+                <span>{job.date}</span>
+              </div>
+              <ul className="list-none text-[#8892b0] space-y-2">
+                {job.description.map((item, itemIndex) => (
+                  <li key={itemIndex} className="flex items-start">
+                    <FaBriefcase className="mr-2 mt-1 text-[#64ffda]" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </section>
 
         <section id="projects" className="py-20">
           <h2 className="text-4xl font-bold mb-12 text-[#ccd6f6]">Featured Projects</h2>
@@ -155,7 +163,7 @@ const Portfolio = () => {
                 image: "/p3.png"
               }
             ].map((project, index) => (
-              <div key={index} className="bg-[#112240] rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
+              <div key={index} className="bg-[#112240] rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1 hover:scale-105">
                 <img src={project.image} alt={project.title} className="w-full h-64 object-cover" />
                 <div className="p-8">
                   <h3 className="text-2xl font-bold text-[#64ffda] mb-4">{project.title}</h3>
@@ -181,9 +189,13 @@ const Portfolio = () => {
               { title: "Languages", skills: ["Java", "Python", "TypeScript", "Solidity", "C++"] },
               { title: "Frameworks", skills: ["Spring Boot", "Express.js", "React.js", "GraphQL", "Next.js", "Flask", "Django"] },
               { title: "AWS Services", skills: ["EC2", "S3", "Lambda", "EKS", "ECR", "ECS", "RDS", "DynamoDB"] },
-              { title: "Other", skills: ["Docker", "MySQL", "MongoDB", "Redis", "Kafka", "PostgreSQL"] }
+              { title: "Blockchain", skills: ["Ethereum", "Ethers.js", "Hardhat", "Remix", "Chainlink Oracle"] },
+              { title: "ML & Data Science", skills: ["TensorFlow", "Scikit-learn", "Pandas", "NumPy", "Classification", "Regression"] },
+              { title: "Deep Learning", skills: ["CNN", "RNN", "LSTM", "Transfer Learning", "NLP"] },
+              { title: "DevOps", skills: ["Docker", "Kubernetes", "Jenkins", "GitLab CI/CD", "Terraform"] },
+              { title: "Databases", skills: ["MySQL", "MongoDB", "Redis", "PostgreSQL", "Cassandra"] }
             ].map((category, index) => (
-              <div key={index} className="bg-[#112240] p-6 rounded-lg shadow-lg">
+              <div key={index} className="bg-[#112240] p-6 rounded-lg shadow-lg transform hover:-translate-y-1 hover:scale-105 transition-all duration-300">
                 <h3 className="text-2xl font-bold text-[#64ffda] mb-4">{category.title}</h3>
                 <ul className="space-y-2">
                   {category.skills.map((skill, skillIndex) => (
@@ -201,7 +213,7 @@ const Portfolio = () => {
             I&apos;m currently looking for new opportunities. Whether you have a question or just want to say hi, I&apos;ll try my best to get back to you!
           </p>
           <div className="text-center">
-            <a href="mailto:vishavsinglaofficial@gmail.com" className="inline-block bg-[#64ffda] text-[#0a192f] text-xl py-4 px-8 rounded-md font-bold hover:bg-[#4da892] transition-colors duration-300">
+            <a href="mailto:vishavsinglaofficial@gmail.com" className="inline-block bg-[#64ffda] text-[#0a192f] text-xl py-4 px-8 rounded-md font-bold hover:bg-[#4da892] transition-colors duration-300 transform hover:-translate-y-1 hover:scale-105">
               Say Hello
             </a>
           </div>

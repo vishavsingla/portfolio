@@ -20,3 +20,5 @@ const About: React.FC = () => (
     </div>
   </section>
 );
+
+export default About;
