@@ -14,7 +14,7 @@ const Project: React.FC<ProjectProps> = ({ title, description, imageUrl, project
   return (
     <div className="flex flex-col md:flex-row items-center bg-[#0a192f] text-[#ccd6f6] my-10 p-5 rounded-lg shadow-lg">
       <div className="md:w-1/2">
-        <img src={imageUrl} alt={title} className="rounded-lg shadow-md" />
+        <Image src={imageUrl} alt={title} className="rounded-lg shadow-md" />
         <Image src={imageUrl} alt={title} width={100} height={50} className="rounded-lg shadow-md" />        
 
       </div>

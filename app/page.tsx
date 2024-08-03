@@ -40,8 +40,8 @@ const Portfolio = () => {
           <h2 className="text-7xl font-bold mb-4 text-[#ccd6f6]">Vishav Singla</h2>
           <h3 className="text-5xl font-bold mb-6 text-[#8892b0]">I build things for the web and blockchain.</h3>
           <p className="text-xl text-[#8892b0] max-w-2xl mb-8">
-            I'm a software engineer specializing in building exceptional digital experiences. 
-            Currently, I'm focused on creating accessible, human-centered products at Globe Teleservices 
+            I&apos;m a software engineer specializing in building exceptional digital experiences. 
+            Currently, I&apos;m focused on creating accessible, human-centered products at Globe Teleservices 
             and contributing to open-source projects.
           </p>
           <div className="flex space-x-6 mb-12">
@@ -67,12 +67,12 @@ const Portfolio = () => {
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-2/3 pr-8">
               <p className="text-xl mb-6 text-[#8892b0]">
-                I'm a third-year undergraduate at Thapar University, pursuing a degree in Electronics and Computer Engineering. 
-                My passion lies in full-stack development and blockchain technology, where I've honed my skills through various projects and internships.
+                I&apos;m a third-year undergraduate at Thapar University, pursuing a degree in Electronics and Computer Engineering. 
+                My passion lies in full-stack development and blockchain technology, where I&apos;ve honed my skills through various projects and internships.
               </p>
               <p className="text-xl mb-6 text-[#8892b0]">
-                As a GSoC'24 Contributor at Aossie and former SDE Intern at Globe Teleservices, I've gained valuable experience in developing robust applications 
-                and working with cutting-edge technologies. I'm always eager to take on new challenges and contribute to innovative solutions.
+                As a GSoC&apos;24 Contributor at Aossie and former SDE Intern at Globe Teleservices, I&apos;ve gained valuable experience in developing robust applications 
+                and working with cutting-edge technologies. I&apos;m always eager to take on new challenges and contribute to innovative solutions.
               </p>
             </div>
             <div className="md:w-1/3 mt-8 md:mt-0">
@@ -198,7 +198,7 @@ const Portfolio = () => {
         <section id="contact" className="py-20">
           <h2 className="text-4xl font-bold mb-8 text-[#ccd6f6] max-w-2xl mx-auto text-center">Get In Touch</h2>
           <p className="text-xl text-[#8892b0] mb-12 max-w-2xl mx-auto text-center">
-            I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+            I&apos;m currently looking for new opportunities. Whether you have a question or just want to say hi, I&apos;ll try my best to get back to you!
           </p>
           <div className="text-center">
             <a href="mailto:vishavsinglaofficial@gmail.com" className="inline-block bg-[#64ffda] text-[#0a192f] text-xl py-4 px-8 rounded-md font-bold hover:bg-[#4da892] transition-colors duration-300">

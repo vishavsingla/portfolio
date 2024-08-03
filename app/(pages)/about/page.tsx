@@ -6,12 +6,12 @@ const About: React.FC = () => (
     <div className="flex flex-col md:flex-row items-center">
       <div className="md:w-2/3 pr-8">
         <p className="mb-4">
-          I'm a third-year undergraduate at Thapar University, pursuing a degree in Electronics and Computer Engineering. 
-          My passion lies in full-stack development and blockchain technology, where I've honed my skills through various projects and internships.
+          Ia m a third-year undergraduate at Thapar University, pursuing a degree in Electronics and Computer Engineering. 
+          My passion lies in full-stack development and blockchain technology, where I have honed my skills through various projects and internships.
         </p>
         <p>
-          As a GSoC'24 Contributor at Aossie and former SDE Intern at Globe Teleservices, I've gained valuable experience in developing robust applications 
-          and working with cutting-edge technologies. I'm always eager to take on new challenges and contribute to innovative solutions.
+          As a GSoC&apos;24 Contributor at Aossie and former SDE Intern at Globe Teleservices, I&apos;ve gained valuable experience in developing robust applications 
+          and working with cutting-edge technologies. I&apos;m always eager to take on new challenges and contribute to innovative solutions.
         </p>
       </div>
       {/* <div className="md:w-1/3 mt-8 md:mt-0">
