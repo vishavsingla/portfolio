@@ -186,14 +186,14 @@ const Portfolio = () => {
           <h2 className="text-4xl font-bold mb-12 text-[#ccd6f6]">Skills</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { title: "Languages", skills: ["Java", "Python", "TypeScript", "Solidity", "C++"] },
-              { title: "Frameworks", skills: ["Spring Boot", "Express.js", "React.js", "GraphQL", "Next.js", "Flask", "Django"] },
+              { title: "Languages", skills: ["Java", "Python", "TypeScript", "Solidity", "C++", "Go"] },
+              { title: "Frameworks", skills: ["Spring Boot", "Express.js", "React.js", "GraphQL", "Next.js", "Flask"] },
               { title: "AWS Services", skills: ["EC2", "S3", "Lambda", "EKS", "ECR", "ECS", "RDS", "DynamoDB"] },
               { title: "Blockchain", skills: ["Ethereum", "Ethers.js", "Hardhat", "Remix", "Chainlink Oracle"] },
               { title: "ML & Data Science", skills: ["TensorFlow", "Scikit-learn", "Pandas", "NumPy", "Classification", "Regression"] },
               { title: "Deep Learning", skills: ["CNN", "RNN", "LSTM", "Transfer Learning", "NLP"] },
-              { title: "DevOps", skills: ["Docker", "Kubernetes", "Jenkins", "GitLab CI/CD", "Terraform"] },
-              { title: "Databases", skills: ["MySQL", "MongoDB", "Redis", "PostgreSQL", "Cassandra"] }
+              { title: "DevOps", skills: ["Docker", "Kubernetes", "Linux", "GitLab CI/CD", "Terraform"] },
+              { title: "Databases", skills: ["MySQL", "MongoDB", "Redis", "PostgreSQL", "Kafka"] }
             ].map((category, index) => (
               <div key={index} className="bg-[#112240] p-6 rounded-lg shadow-lg transform hover:-translate-y-1 hover:scale-105 transition-all duration-300">
                 <h3 className="text-2xl font-bold text-[#64ffda] mb-4">{category.title}</h3>
