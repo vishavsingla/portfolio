@@ -45,10 +45,10 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Build Docker image for production
-        run: docker build --file ../../Dockerfile --target production -t yourusername/your-app-name:latest .
+        run: docker build --file Dockerfile --target production -t yourusername/your-app-name:latest .
 
       - name: Build Docker image for development
-        run: docker build --file ../../Dockerfile --target dev -t yourusername/your-app-name:dev .
+        run: docker build --file Dockerfile --target dev -t yourusername/your-app-name:dev .
 
   push-to-dockerhub:
     runs-on: ubuntu-latest
