@@ -18,7 +18,7 @@ FROM base as builder
 COPY . .
 RUN npm run build
 
-# Prepare production environment
+# Production stage
 FROM base as production
 
 # Set environment variables
@@ -40,3 +40,18 @@ EXPOSE 3000
 
 # Start the application
 CMD npm start
+
+# Development stage
+FROM base as dev
+
+# Set environment variables
+ENV NODE_ENV=development
+
+# Install development dependencies
+RUN npm install
+
+# Expose the port the app runs on
+EXPOSE 3000
+
+# Start the development server
+CMD npm run dev
