@@ -45,7 +45,7 @@ const Portfolio = () => {
               Currently, I&apos;m focused on creating accessible, human-centered products at Globe Teleservices 
               and contributing to open-source projects.
             </p>
-            <div className="bg-[#112240] p-8 rounded-lg shadow-xl mb-8 transform hover:scale-105 transition-all duration-300">
+            <div className="bg-[#112240] p-8 rounded-lg shadow-xl mb-8 transform hover:scale-105 transition-all duration-300 mb-4">
               <h4 className="text-2xl font-bold text-[#64ffda] mb-4">GSoC 2024 Contributor</h4>
               <p className="text-[#8892b0]">Selected as a Google Summer of Code contributor for AOSSIE organization.</p>
             </div>
@@ -80,8 +80,8 @@ const Portfolio = () => {
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-2/3 pr-8">
               <p className="text-xl mb-6 text-[#8892b0]">
-                I&apos;m a third-year undergraduate at Thapar University, pursuing a degree in Electronics and Computer Engineering. 
-                My passion lies in full-stack development and blockchain technology, where I&apos;ve honed my skills through various projects and internships.
+                I&apos;m a final-year undergraduate student at Thapar Institute of Engineering and Technology, pursuing a degree in Electronics and Computer Engineering. 
+                My passion lies in DevOps and Backend development , where I&apos;ve honed my skills through various projects and internships.
               </p>
               <p className="text-xl mb-6 text-[#8892b0]">
                 As a GSoC&apos;24 Contributor at Aossie and former SDE Intern at Globe Teleservices, I&apos;ve gained valuable experience in developing robust applications 
@@ -110,12 +110,13 @@ const Portfolio = () => {
                 logo: "/sunrise.png"
               },
               {
-                title: "Google Summer of Code (GSoC)",
-                company: "Student Developer for Social Street Smart at AOSSIE",
+                title: "Google Summer of Code, AOSSIE",
+                company: "Student Developer",
                 date: "May 2024 – August 2024",
                 description: [
+                  "Worked on building chrome extension Social Street Smart",
                   "Migrated the project repository from GitLab to GitHub",
-                  "Upgraded outdated ML models, and deployed them on Flask APIs",
+                  "Upgraded outdated ML and Deep Learning models, and deployed them on Flask APIs",
                   "Refactored and migrated the frontend codebase to React, reducing load times by 40%"
                 ],
                 logo: "/gsoc.png"
@@ -125,6 +126,7 @@ const Portfolio = () => {
                 company: "Globe Teleservices",
                 date: "June 2024 – July 2024",
                 description: [
+                  "Worked on an internal project Impulse",
                   "Developed APIs and backend models supporting marketing and sales teams",
                   "Utilized Terraform for deployment and Kafka for logging while working with microservices",
                   "Created automated form generation in React.js using JSON-based configurations"
